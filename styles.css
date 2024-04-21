@@ -1,0 +1,161 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 55px;
+    color: red;
+    text-decoration: none;
+    padding: 0 50px; /* Adjusted padding */
+    font-weight: bold;
+    display: inline;
+}
+
+.header-buttons {
+    margin-top: 20px;
+}
+
+.header-button {
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.header-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.container {
+    position: relative;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.container::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('picts.jpg'); /* replace 'picts.jpg' with your actual image file */
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+h2, p {
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.button-container {
+    text-align: center;
+}
+
+.download-button {
+    display: none; /* Removed the green Download Speedster Showdown button */
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.red-text {
+    color: red;
+}
+
+.yellow-text {
+    color: yellow;
+}
+.added-text {
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 0.1px; /* Adjust as needed */
+}
+/* Existing CSS */
+/* Existing CSS */
+.added-text {
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 10px; /* Add space above the text */
+    margin-bottom: 10px; /* Add space below the text */
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px; /* Adjust as needed */
+}
+
+.left-image,
+.right-image {
+    flex-basis: calc(50% - 20px); /* Adjust width as needed */
+    position: relative;
+}
+
+.left-image img {
+    height: auto;
+    width: 700px;
+    display: block;
+    margin: 100px 0 210px -250px; /* Adjust margins to move the left image to the left side */
+}
+
+.right-image img {
+    height: auto;
+    width:700px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 210px; /* Add space below the image */
+    margin-top: 100px;
+    margin-left: 350px;
+}
+
+.image-text {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: -40px; /* Adjust the position of the text */
+}
+
+.left-image .image-text {
+    left: -203px;
+    top: -1;
+
+
+}
+
+.right-image .image-text {
+   left: 300px;
+   
+
+}
